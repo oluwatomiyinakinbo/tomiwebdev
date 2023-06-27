@@ -348,23 +348,23 @@
           </div>
 
           <div class="col-lg-9 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="https://formspree.io/f/xwkdeqql" method="POST" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
+                  <input type="text" name="name" class="form-control" id="name" required minlength="2" maxlength="50">
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
+                  <label for="email">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$">
                 </div>
               </div>
               <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required minlength="2" maxlength="100">
               </div>
               <div class="form-group">
-                <label for="name">Message</label>
+                <label for="message">Message</label>
                 <textarea class="form-control" name="message" rows="10" required></textarea>
               </div>
               <div class="my-3">
